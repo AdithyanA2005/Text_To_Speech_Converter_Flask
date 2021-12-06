@@ -5,7 +5,7 @@ import datetime
 import os
 
 app = Flask(__name__)
-app.config['AUDIO_FOLDER'] = os.path.join(app.root_path, "static/audios")
+app.config['AUDIO_FOLDER'] = os.path.join(app.root_path, "static/audios/")
 
 
 @app.route('/')
@@ -29,7 +29,7 @@ def convert():
     date = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     filename = "audio_" + date + ".mp3"
 
-    directory = app.config['AUDIO_FOLDER']
+    directory = os.path.join(app.root_path, "static/")
     files_in_directory = os.listdir(directory)
     print(f"filesindirectory {files_in_directory}")
     filtered_files = [file for file in files_in_directory if file.endswith(".mp3")]
