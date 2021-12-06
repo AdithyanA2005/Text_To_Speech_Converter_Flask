@@ -36,7 +36,7 @@
     </div>
 </section>
 <script>
-    const audio_file = "{{ url_for('static', filename=get_audio) }}"
+    const audio_file = "{{ url_for('static', filename='audios/'+get_audio) }}"
     const source_tag = document.getElementById('audio_src')
     source_tag.src = audio_file
 </script>
