@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<style>
+    body { background: #eee; }
+</style>
+
+<section class="section mt-5">
+    <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
+        <form action="{{ url_for('convert') }}" method="get">
+            <div class="mb-3">
+                <label for="input_text" class="form-label">Text</label>
+                <textarea name="text_to_convert" id="input_text" class="form-control" type="text" style="height:7rem" aria-describedby="input_text_help">{{get_text}}</textarea>
+                <div id="input_text_help" class="form-text">Enter the text that you want to convert</div>
+            </div>
+
+            <div class="mb-3">
+                <div class="d-flex">
+                    <div style="width:45%" class="d-flex justify-content-between">  
+                        <button type="submit" class="btn btn-success">Play Audio</button>
+                    </div>
+                    <div style="width:55%" class="d-flex justify-content-end">
+                        <a href="/" id="clear_button" type="button" class="btn btn-danger">Clear</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="section  mt-2">
+    <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
+        <audio controls autoplay>
+            <source id="audio_src" src="" >
+        </audio>
+    </div>
+</section>
+<script>
+    const audio_file = "{{ url_for('static', filename=get_audio) }}"
+    const source_tag = document.getElementById('audio_src')
+    source_tag.src = audio_file
+</script>
+
+{% endblock body %}
