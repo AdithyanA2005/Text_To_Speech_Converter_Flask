@@ -5,7 +5,7 @@ import datetime
 import os
 
 app = Flask(__name__)
-app.config['AUDIO_FOLDER'] = os.path.join(app.root_path, "static\\")
+app.config['AUDIO_FOLDER'] = os.path.join(app.root_path, "static/")
 
 
 @app.route('/')
