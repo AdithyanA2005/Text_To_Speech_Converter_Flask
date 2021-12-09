@@ -6,6 +6,7 @@ import os
 
 app = Flask(__name__)
 app.config['AUDIO_FOLDER'] = os.path.join(app.root_path, "static/audios/")
+app.config['STATIC_FOLDER'] = os.path.join(app.root_path, "static/")
 
 
 @app.route('/')
@@ -29,20 +30,12 @@ def convert():
     date = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     filename = "audio_" + date + ".mp3"
 
-    directory = os.path.join(app.root_path, "static/")
-    files_in_directory = os.listdir(directory)
-    print(f"filesindirectory {files_in_directory}")
-    filtered_files = [file for file in files_in_directory if file.endswith(".mp3")]
-    print(f"Filtered LIst {filtered_files}")
-    for file in filtered_files:
-        print(f"- {file}")
-        path_to_file = os.path.join(directory, file)
-        print(f"     path {path_to_file}")
-        os.remove(path_to_file)
-
-
-
-
+    directory = app.config['AUDIO_FOLDER']
+    files = os.listdir(directory)
+    if len(files) > 5:
+        for file in files:
+            path_to_file = os.path.join(directory, file)
+            os.remove(path_to_file)
 
     create_audio(text, app.config['AUDIO_FOLDER'] + filename)
     return redirect(url_for("home", text=text, file=filename))
