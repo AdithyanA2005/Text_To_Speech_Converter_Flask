@@ -9,9 +9,8 @@
     <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
         <form action="{{ url_for('convert') }}" method="get">
             <div class="mb-3">
-                <label for="input_text" class="form-label">Text</label>
-                <textarea name="text_to_convert" id="input_text" class="form-control" type="text" style="height:7rem" aria-describedby="input_text_help">{{get_text}}</textarea>
-                <div id="input_text_help" class="form-text">Enter the text that you want to convert</div>
+                <label for="input_text" class="form-label secondary-title">Text To Speech Converter</label>
+                <textarea name="text_to_convert" placeholder="Enter Text Here" id="input_text" class="form-control" type="text" style="height:7rem" aria-describedby="input_text_help">{{get_text}}</textarea>
             </div>
 
             <div class="mb-3">
@@ -30,7 +29,10 @@
 
 <section class="section  mt-2">
     <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
-        <audio controls autoplay>
+        <div>
+            <h6 class="secondary-title">Play | Download Audio</h6>
+        </div>
+        <audio class="w-100" controls autoplay>
             <source id="audio_src" src="" >
         </audio>
     </div>

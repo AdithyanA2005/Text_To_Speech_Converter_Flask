@@ -1,0 +1,16 @@
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.secondary-title {
+    font-family: 'Lobster', cursive;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
