@@ -9,14 +9,14 @@
     <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
         <form action="{{ url_for('convert') }}" method="get">
             <div class="mb-3">
-                <label for="input_text" class="form-label secondary-title">Text To Speech Converter</label>
+                <label for="input_text" class="form-label text-info secondary-title">Text To Speech Converter</label>
                 <textarea name="text_to_convert" placeholder="Enter Text Here" id="input_text" class="form-control" type="text" style="height:7rem" aria-describedby="input_text_help">{{get_text}}</textarea>
             </div>
 
             <div class="mb-3">
                 <div class="d-flex">
                     <div style="width:45%" class="d-flex justify-content-between">  
-                        <button type="submit" class="btn btn-success">Play Audio</button>
+                        <button type="submit" class="btn btn-primary">Play Audio</button>
                     </div>
                     <div style="width:55%" class="d-flex justify-content-end">
                         <a href="/" id="clear_button" type="button" class="btn btn-danger">Clear</a>
@@ -30,7 +30,7 @@
 <section class="section  mt-2">
     <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
         <div>
-            <h6 class="secondary-title">Play | Download Audio</h6>
+            <h6 class="text-info secondary-title">Play | Download Audio</h6>
         </div>
         <audio class="w-100" controls autoplay>
             <source id="audio_src" src="" >
