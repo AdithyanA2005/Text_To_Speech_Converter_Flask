@@ -35,7 +35,8 @@ def convert():
     if len(files) > 5:
         for file in files:
             path_to_file = os.path.join(directory, file)
-            os.remove(path_to_file)
+            if path_to_file.endswith('.mp3'):
+                os.remove(path_to_file)
 
     create_audio(text, app.config['AUDIO_FOLDER'] + filename)
     return redirect(url_for("home", text=text, file=filename))
