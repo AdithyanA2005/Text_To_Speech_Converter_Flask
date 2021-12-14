@@ -13,14 +13,7 @@
     <title>AdiSpeaks</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                    <a class="navbar-brand m-auto text-primary" href="#">AdiSpeaks</a>
-            </div>
-        </nav>
-    </header>
-
+    {% include 'components/navbar.html' %}
     {% block body %}{% endblock body %}
     
     <script src="https://kit.fontawesome.com/d178991aaf.js" crossorigin="anonymous"></script>

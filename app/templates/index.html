@@ -1,11 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<style>
-    body { background: #eee; }
-</style>
-
-<section class="section mt-5">
+<section class="section">
     <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
         <form action="{{ url_for('convert') }}" method="get">
             <div class="mb-3">
@@ -19,7 +15,7 @@
                         <button type="submit" class="btn btn-primary">Play Audio</button>
                     </div>
                     <div style="width:55%" class="d-flex justify-content-end">
-                        <a href="/" id="clear_button" type="button" class="btn btn-danger">Clear</a>
+                        <a href="/converter" id="clear_button" type="button" class="btn btn-danger">Clear</a>
                     </div>
                 </div>
             </div>

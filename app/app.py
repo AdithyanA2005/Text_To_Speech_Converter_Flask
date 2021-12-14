@@ -11,15 +11,18 @@ app.config['STATIC_FOLDER'] = os.path.join(app.root_path, "static/")
 
 @app.route('/')
 def home():
+    return render_template('home.html')
+
+
+@app.route('/converter')
+def converter():
     def get_text():
         text = request.args.get('text')
-        return "" if text == None else text
-
+        return "" if text is None else text
 
     def get_audio():
         file = request.args.get('file')
-        return "" if file == None else file
-
+        return "" if file is None else file
 
     return render_template('index.html', get_text=get_text(), get_audio=get_audio())
 
@@ -39,4 +42,15 @@ def convert():
                 os.remove(path_to_file)
 
     create_audio(text, app.config['AUDIO_FOLDER'] + filename)
-    return redirect(url_for("home", text=text, file=filename))
+    return redirect(url_for("converter", text=text, file=filename))
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.errorhandler(404)
+def notfound(e):
+    return render_template('error.html')
+
