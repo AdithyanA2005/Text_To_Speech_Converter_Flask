@@ -1,42 +1,25 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<section class="section">
-    <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
+<div class="main-app-page">
+    <div class="container">
         <form action="{{ url_for('convert') }}" method="get">
-            <div class="mb-3">
-                <label for="input_text" class="form-label text-info secondary-title">Text To Speech Converter</label>
-                <textarea name="text_to_convert" placeholder="Enter Text Here" id="input_text" class="form-control" type="text" style="height:7rem" aria-describedby="input_text_help">{{get_text}}</textarea>
+            <div>
+                <h4 class="text-lable">Text To Speech Converter</h4>
+                <textarea class="text-area" type="text" name="text_to_convert" placeholder="Enter Text Here">{{get_text}}</textarea>
             </div>
-
-            <div class="mb-3">
-                <div class="d-flex">
-                    <div style="width:45%" class="d-flex justify-content-between">  
-                        <button type="submit" class="btn btn-primary">Play Audio</button>
-                    </div>
-                    <div style="width:55%" class="d-flex justify-content-end">
-                        <a href="/converter" id="clear_button" type="button" class="btn btn-danger">Clear</a>
-                    </div>
-                </div>
+            <div class="action-btns">
+                <button type="submit" class="action-btn submit-btn">Play Audio</button>
+                <a href="/converter" id="clear_button" type="button" class="action-btn clear-btn">Clear</a>
             </div>
         </form>
     </div>
-</section>
 
-<section class="section  mt-2">
-    <div class="col-10 col-md-9 col-xl-7 p-4 bg-light rounded rounded-3 container">
-        <div>
-            <h6 class="text-info secondary-title">Play | Download Audio</h6>
-        </div>
-        <audio class="w-100" controls autoplay>
-            <source id="audio_src" src="" >
-        </audio>
+    <div class="container download-container">
+        <h4 class="text-lable">Play | Download Audio</h4>
+        <audio class="audio-bar" controls autoplay><source class="audio-src" src="{{ url_for('static', filename='audios/'+get_audio) }}" ></audio>
     </div>
-</section>
-<script>
-    const audio_file = "{{ url_for('static', filename='audios/'+get_audio) }}"
-    const source_tag = document.getElementById('audio_src')
-    source_tag.src = audio_file
-</script>
+</div>
+
 
 {% endblock body %}

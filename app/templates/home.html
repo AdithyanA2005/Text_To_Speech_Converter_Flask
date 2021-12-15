@@ -1,15 +1,27 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<section>
-    <div class="item_container pt-3 pb-4 rounded bg-white col-10 col-md-9 col-xl-6 rounded container">
-        <div class="mb-3">
-            <h1 class="home_title display-3 text-capitalize bg-primary rounded-pill text-center text-light pe-5 ps-5 pt-2 pb-2">adi speaks</h1>
+<div class="home-page">
+    <div class="get-started container">
+        <div class="logo">
+            {% include 'components/header.html' %}
         </div>
-        {% include 'components/header.html' %}
-        <div class="mt-3"><a href="/converter" class="text-uppercase btn btn-success btn-lg pe-5 ps-5">get started</a>
+        <div class="info">
+            <h1 class="title">adi speaks</h1>    
+            <h4 class="sub-title">
+                Yo! Nice to see you here <br>
+                Use this text to speech converter because it is hassel free <br> 
+                Click on Get Started button to Start or Click on About button to see the details
+            </h4>
+            <div class="action-btns">
+                <a href="/converter" class="start-btn">get started</a>
+                <a href="/about" class="about-btn">about us</a>
+            </div>
         </div>
+        
+        
+        
     </div>
-</section>
+</div>
 
 {% endblock body %}
