@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-normal);
+    background-color: var(--color-dark);   
+}
+
+.app {
+    width: 80vw;
+    // min-height: 90vh;
+    margin: auto;
+    padding-top: 7rem;
+}

@@ -1,0 +1,23 @@
+// NAVBAR 
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color-light);
+
+    .container {
+        width: 70%;
+        padding: 0.75rem;
+        display: flex;
+        justify-content: center;
+    
+        .navbar-brand {
+            color: var(--color-purple);
+            font-size: 2rem;
+            letter-spacing: 4px;
+            font-family: var(--font-slant);
+        }
+    }
+}

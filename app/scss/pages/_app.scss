@@ -1,0 +1,99 @@
+.main-app-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        .input-area {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .text-lable {
+                color: var(--color-purple);
+                letter-spacing: 3px;
+                font-size: 1.5rem;
+            }
+
+            .text-area {
+                height: 7rem;
+                width: 96%;
+                padding: 1.5%;
+                outline: 0;
+                border: 0.1rem solid var(--color-purple);
+                border-radius: 5px; 
+                color: var(--color-cyan);
+                background-color: var(--color-light);
+                font-size: 1.2rem;
+            }
+        }
+
+        .action-btns {
+            display: flex;
+            justify-content: space-between;
+
+            .action-btn {
+                border: 0;
+                outline: 0;
+                padding: 0.45rem;
+                font-size: 1rem;
+                text-align: center;
+                border-radius: 5px;
+                letter-spacing: 1.5px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.5s ease-in-out;
+                    backface-visibility: hidden;
+                }
+            }
+
+            .clear-btn {
+                width: 3rem;
+                background-color: var(--color-cyan);
+                color: var(--color-white);
+
+                &:hover {
+                    transform: rotate(-1deg);
+                    background-color: #C84B31;
+                }
+            } 
+
+            .submit-btn {
+                width: 7rem;
+                color: var(--color-white);
+                background-color: var(--color-purple);
+
+                .submit-btn:hover {
+                    transform: rotate(1deg);
+                    background-color: #519872;
+                }
+            }
+        }
+    }
+
+    .download-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: var(--color-light);
+
+        .text-lable {
+            color: var(--color-purple);
+            letter-spacing: 3px;
+            font-size: 1.5rem;
+        }
+
+        audio {
+            width: 100%;
+            &::-webkit-media-controls-panel {
+                background-color: var(--color-purple);
+                opacity: 0.9;
+            }
+        }
+    }
+}

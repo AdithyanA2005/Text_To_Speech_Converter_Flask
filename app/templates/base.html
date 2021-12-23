@@ -14,8 +14,11 @@
 </head>
 <body>
     {% include 'components/navbar.html' %}
+
     <section class="app">
         {% block body %}{% endblock body %}
     </section>
+
+    {% include 'components/footer.html' %}
 </body>
 </html>

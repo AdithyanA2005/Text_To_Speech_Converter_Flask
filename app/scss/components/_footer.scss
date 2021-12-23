@@ -1,0 +1,82 @@
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 8rem;
+    background: var(--color-light);
+    bottom: 0;
+
+    .footer-container {
+        gap: 1rem;
+        width: 80vw;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--color-dark);
+
+        .title {
+            color: var(--color-purple);
+            text-transform: capitalize;
+            text-align: center;
+            font-family: var(--font-slant);
+            font-size: 2rem;
+            letter-spacing: 5px;
+            text-decoration: underline; 
+            text-underline-position: under;
+            padding: 0.75rem;
+        } 
+
+        .sub-title {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: var(--font-slant);
+            font-size: 1.1rem;
+            color: var(--color-white);
+            padding: 0.75rem;
+            letter-spacing: 3px;
+            font-weight: 100;
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            padding: 0.75rem;
+            gap: 0.75rem;
+
+            p {
+                text-align: center;
+                font-size: 1.1rem;
+                color: var(--color-purple);
+            }
+
+            .social-links {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .wrapper {
+                    width: 22rem;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0.5rem;
+                    padding-left: 2rem; 
+                    padding-right: 2rem; 
+                    border-radius: 20px;
+                    background: white;
+                
+                    .link {
+                        font-size: 1.75rem;
+                        color: var(--color-purple);
+                        transition: 0.5s ease;
+
+                        &:hover {
+                            transform: scale(1.3);
+                            color: var(--color-blue);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

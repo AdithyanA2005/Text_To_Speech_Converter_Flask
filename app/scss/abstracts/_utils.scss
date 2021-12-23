@@ -1,0 +1,14 @@
+.container {
+    padding: 2rem;
+    background-color: var(--color-light); 
+}
+
+.header {
+    width: 18rem;
+    height: 18rem;
+    fill: var(--color-purple);
+    outline: 0.3rem solid var(--color-purple);
+    border: 1.5rem solid var(--color-white);
+    border-radius: 30px 140px 30px 140px;
+    background-color: var(--color-dark);
+}

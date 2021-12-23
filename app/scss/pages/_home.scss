@@ -1,0 +1,70 @@
+.home-page { 
+    .get-started {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .info {
+            width: 50%;
+            padding:  1.5rem;
+            display: flex;
+            background: var(--color-dark);
+            flex-direction: column;
+            justify-content: space-between;   
+
+
+            .title {
+                color: var(--color-blue);
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 3rem;
+                text-decoration: overline underline;
+                text-underline-position: under;
+            }
+
+            .sub-title {
+                color: var(--color-white);
+                text-align: center;
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                min-height: 7rem;
+                height: 8rem;
+            }
+
+            .action-btns {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .start-btn {
+                    padding: 0.6rem;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    font-size: 1.3rem;
+                    border-radius: 5px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: var(--color-white);
+                    background-color: var(--color-purple);
+                }
+
+                .about-btn {
+                    padding: 0.5rem;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    color: var(--color-white);
+                    background-color: var(--color-cyan);
+                }
+            }
+        }
+    }
+}
