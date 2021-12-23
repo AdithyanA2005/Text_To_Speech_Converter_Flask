@@ -1,33 +1,32 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<section>
-    <div>
-        <div class="pe-4 ps-4 pt-4 pb-4 rounded bg-white col-11 col-xl-10 rounded container">
-            <div class="d-flex justify-content-between">
-                <div class="w-25">{% include 'components/header.html' %}</div>
-                <div class="mt-2 mb-2 w-50">
-                    <h1 class="text-capitalize text-info">about the author</h1>
-                    <div>
-                        <h5 class="text-muted">
-                            I am Adithyan A <br>
-                            I am the cretor of this website and I am from Kerala, India <br>
-                            You can see my diffrent open source projects on
-                            <a href="https://github.com/AdithyanA2005" target="_blank">Github</a>
-                        </h5>
+<div class="about-page">
+        <div class="section container">
+            <div class="logo">
+                {% include 'components/author.html' %}
+            </div>
+
+            <div class="info">
+                <div class="data">
+                    <h1 class="title">about the author</h1>
+                    <hr>
+                    <div class="description">
+                        <b>Hello!</b> I am Adithyan A </h5>
+                        <br>
+                        Along with being the cretor of this website, I am also a 11<sup>th</sup> grade student from Kerala, <b>India</b>
+                        <br>
+                        <br>
+                        You can connect with me through diffrent platforms, Links Given Below
                     </div>
+                </div>
+                <div class="social-links">
+                    <a class="link" href="https://www.instagram.com/adithyana2005/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="link" href="https://www.youtube.com/channel/UCOQwqX34eeM_dfC0tdAwWyQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="link" href="https://www.github.com/AdithyanA2005" target="_blank"><i class="fab fa-github-alt"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="mt-3">
-        <div class="item_container pt-4 pb-4 rounded bg-white col-10 col-md-9 col-xl-6 rounded container">
-            <div class="d-flex justify-content-between">
-
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 
 {% endblock body %}
