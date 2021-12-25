@@ -44,34 +44,26 @@
                 text-align: center;
                 border-radius: 5px;
                 letter-spacing: 1.5px;
+                transition: 0.5s ease;
+                color: white;
+                opacity: 0.8;
 
                 &:hover {
+                    opacity: 1;
                     transform: scale(1.1);
-                    transition: 0.5s ease-in-out;
-                    backface-visibility: hidden;
+                    transition: 0.5s ease;
+                    // backface-visibility: hidden;
                 }
             }
 
             .clear-btn {
                 width: 3rem;
                 background-color: var(--color-cyan);
-                color: var(--color-white);
-
-                &:hover {
-                    transform: rotate(-1deg);
-                    background-color: #C84B31;
-                }
             } 
 
             .submit-btn {
                 width: 7rem;
-                color: var(--color-white);
                 background-color: var(--color-purple);
-
-                .submit-btn:hover {
-                    transform: rotate(1deg);
-                    background-color: #519872;
-                }
             }
         }
     }

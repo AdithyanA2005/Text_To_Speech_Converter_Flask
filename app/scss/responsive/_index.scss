@@ -1,0 +1,10 @@
+@forward 'abstracts/base';
+@forward 'abstracts/utils';
+
+@forward 'components/navbar';
+@forward 'components/sidenav';
+@forward 'components/footer';
+
+@forward 'pages/home';
+@forward 'pages/app';
+@forward 'pages/about';

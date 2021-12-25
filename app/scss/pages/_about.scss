@@ -30,14 +30,13 @@
                 }
 
                 .description {
-                    color: var(--color-white);
-                    letter-spacing: 3px;
-                    font-family: var(--font-slant);
-                    line-height: 1.5rem;
-                    font-size: 1.1rem;
-                    font-weight: 100;
+                        color: var(--color-white);
+                        letter-spacing: 1px;
+                        line-height: 1.5rem;
+                        font-size: 1.1rem;
+                        font-weight: 100;
+                    }
                 }
-            }
 
             .social-links {
                 display: flex;

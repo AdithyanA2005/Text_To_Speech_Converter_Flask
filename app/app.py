@@ -24,7 +24,7 @@ def converter():
         file = request.args.get('file')
         return "" if file is None else file
 
-    return render_template('index.html', get_text=get_text(), get_audio=get_audio())
+    return render_template('app.html', get_text=get_text(), get_audio=get_audio())
 
 
 @app.route("/convert", methods=['POST', 'GET'])

@@ -1,23 +1,55 @@
 // NAVBAR 
 .navbar {
-    display: flex;
-    position: fixed;
-    justify-content: center;
+    left:0 ;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
+    position: fixed;
     background-color: var(--color-light);
 
-    .container {
-        width: 70%;
-        padding: 0.75rem;
+    .ham-container {
+        z-index: 15;
+        position: absolute;
+        background: var(--color-purple);
+        width: var(--nav-length);
+        height: var(--nav-length);
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+
+        button {
+            outline: 0;
+            border: 0;
+            width: inherit;
+            height: inherit;
+            font-size: 1.6rem;
+            color: white;
+            background: transparent;
+            cursor: pointer;
+            transition: 0.5s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .nav-container {
+        width: 100%;
+        height: var(--nav-length);
+        padding: 0.5rem;
         display: flex;
         justify-content: center;
     
         .navbar-brand {
             color: var(--color-purple);
             font-size: 2rem;
-            letter-spacing: 4px;
             font-family: var(--font-slant);
+            letter-spacing: 4px;
+            transition: 0.5s ease;
+
+            &:hover {
+                transform: scale(1.1)
+            }
         }
     }
 }

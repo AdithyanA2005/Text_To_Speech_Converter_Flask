@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.jpeg') }}">
     <script src="https://kit.fontawesome.com/d178991aaf.js" crossorigin="anonymous"></script> 
-    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
     <title>AdiSpeaks</title>
 </head>
 <body>
+    {% include 'components/skip_to_main.html' %}
     {% include 'components/navbar.html' %}
+    {% include 'components/sidenav.html' %}
 
-    <section class="app">
+    <section id="app" style="padding-left: 3.5rem;">
         {% block body %}{% endblock body %}
     </section>
-
+    
     {% include 'components/footer.html' %}
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>

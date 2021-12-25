@@ -1,11 +1,13 @@
 @use 'abstracts/root';
 @use 'abstracts/base';
 @use 'abstracts/utils';
+@use 'components/skip_to_main';
+@use 'components/sidenav';
 @use 'components/navbar';
 @use 'pages/app';
 @use 'pages/home';
 @use 'pages/about';
-
+@use 'responsive';
 
 @use 'components/footer';
 

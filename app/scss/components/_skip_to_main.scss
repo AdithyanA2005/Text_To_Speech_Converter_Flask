@@ -1,0 +1,23 @@
+.skip-to-main {
+    z-index: 20;
+    position: absolute;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 4rem;
+    border-radius: 0 5px 134px 0;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.9);
+    background: var(--color-purple);
+    transform: translateX(-120%);
+    transition: 0.5s ease;
+
+    &:focus {
+        transform: translateX(0);
+        outline: 0;
+        border:0
+    }
+}

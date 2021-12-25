@@ -1,0 +1,64 @@
+.sidenav {
+    .side-container {
+        height: 100vh;
+        position: absolute;
+        z-index: 5;
+        // It's display is setted as inline css for js
+        position: fixed;
+        flex-direction: column;
+        background: var(--color-light);
+        width: var(--nav-length);
+        padding: 0.5rem;
+        padding-top: 5rem;
+
+        .nav-items {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 1.2rem;
+            
+            .nav-item {
+                width: 1.2rem;
+                height: 1.2rem;
+                display: flex;
+                justify-content:center;
+                background: var(--color-purple);
+                padding: 0.5rem;
+                border-radius: 10px;
+                transition: 0.5s ease;
+
+                a {
+                    color: white;
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+        .switch-theme { 
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-top: 2.5rem;
+            display: flex;
+            justify-content:center;
+            background: var(--color-cyan);
+            padding: 0.5rem;
+            border-radius: 10px;
+            transition: 0.6s ease;
+
+            button {
+                outline: 0;
+                border: 0;
+                color: white;
+                background: inherit;
+                font-size: 1rem;
+            }
+
+            &:hover  {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

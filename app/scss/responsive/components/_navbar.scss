@@ -1,0 +1,34 @@
+@media screen and (max-width: 375px) {
+    .navbar {
+        .nav-container {
+            margin-right: 1rem !important;
+            justify-content: end;
+
+            .navbar-brand {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .navbar {
+        .ham-container {
+            button {
+                font-size: 1.5rem;
+            }
+        }
+
+        .nav-container {
+            margin-right: 1rem !important;
+            justify-content: end;
+
+            .navbar-brand {
+                display: flex;
+                vertical-align: center;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 500px) {
+    .footer-container {
+        .title {
+            font-size: 1.5rem !important;
+        }
+        .sub-title {
+            font-size: 1rem !important;
+        }
+        .social {
+            p {
+                font-size: 0.9rem !important;
+            }
+
+            .social-links {
+                .wrapper {
+                    padding: 0.25rem !important;
+
+                    .link {
+                        font-size: 1.5rem !important;
+                    }                    
+                }
+            }
+        }
+    }
+}

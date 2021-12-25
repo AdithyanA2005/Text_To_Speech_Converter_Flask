@@ -1,0 +1,136 @@
+@media screen and (max-width: 1400px) {
+    .home-page .get-started {
+        .info {
+            .sub-title {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .home-page .get-started {
+        justify-content: center;
+            
+        .logo {
+            display: none;
+        }
+        
+        .info {
+            width: 40rem;
+            gap:1.5rem;
+    
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .sub-title {
+                font-size: 1rem;
+            }
+
+            .action-btns .start-btn {
+                padding: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .home-page .get-started {
+        .info {
+            .sub-title {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home-page .get-started {
+        .info {
+            padding: 1rem;
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .sub-title {
+                font-size: 1rem;
+            }
+
+            .action-btns {
+                .start-btn,
+                .about-btn {
+                    padding:0.4rem;
+                    letter-spacing: 1px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .home-page .get-started {
+        .info {
+            .action-btns {
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                gap: 1rem;
+
+                .start-btn,
+                .about-btn {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .home-page .get-started {
+        .info {
+            .title {
+                font-size: 1.8rem;
+            }
+
+            .sub-title {
+                font-size: 0.85rem;
+            }
+
+            .action-btns {
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                gap: 1rem;
+
+                .start-btn,
+                .about-btn {
+                    width: 100%;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .home-page .get-started {
+        .info {
+            .title {
+                font-size: 1.6rem;
+            }
+
+            .sub-title {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

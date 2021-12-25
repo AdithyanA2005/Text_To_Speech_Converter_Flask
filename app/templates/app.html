@@ -5,11 +5,11 @@
     <form class="container " action="{{ url_for('convert') }}" method="get">
         <div class="input-area">
             <h4 class="text-lable">Text To Speech Converter</h4>
-            <textarea class="text-area" type="text" name="text_to_convert" placeholder="Enter Text Here">{{get_text}}</textarea>
+            <textarea class="text-area" id="main-content" type="text" name="text_to_convert" placeholder="Enter Text Here">{{get_text}}</textarea>
         </div>
         <div class="action-btns">
             <button type="submit" class="action-btn submit-btn">Play Audio</button>
-            <a href="/converter" id="clear_button" type="button" class="action-btn clear-btn">Clear</a>
+            <a href="/converter" type="button" class="action-btn clear-btn">Clear</a>
         </div>
     </form>
 

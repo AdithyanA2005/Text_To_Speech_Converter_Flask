@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px) {
+    .main-app-page .text-lable {
+        font-size: 1.2rem !important;
+    }
+
+    .main-app-page {
+        form .input-area {
+            .text-area {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main-app-page {
+        form {
+            .action-btns {
+                flex-direction: column;
+                gap: 1rem;
+
+                .submit-btn {
+                    width: 80%;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    margin: auto;
+                }
+
+                .clear-btn {
+                    width: 50%;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

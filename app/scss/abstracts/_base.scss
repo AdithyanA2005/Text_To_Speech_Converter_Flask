@@ -12,9 +12,11 @@ body {
     background-color: var(--color-dark);   
 }
 
-.app {
+
+#app {
     width: 80vw;
-    // min-height: 90vh;
+    min-height: 90vh;
     margin: auto;
-    padding-top: 7rem;
+    // Padding Left for Sidenav exception is now inline css for js 
+    padding-top: 6rem;
 }
