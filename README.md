@@ -9,11 +9,17 @@
 
 > ### HOW TO USE
 >
-> First Install the requirements files
+
+> First clone the repository
+> ```bash
+> git clone https://github.com/AdithyanA2005/Text_To_Speech_Flask.git
+> ```
+
+> Install the required modules in the donloaded folder
 > ```bash
 > pip install -r requirements.txt
 > ```
->
+
 >
 > Then start the developement server by doing
 > ```bash
