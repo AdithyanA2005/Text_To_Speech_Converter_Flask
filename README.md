@@ -25,3 +25,6 @@
 > ```bash
 > python main.py
 > ```
+
+> ### My Blog
+> [Checkout the blog at hashnode](https://adithyana.hashnode.dev/i-created-a-text-to-speech-converter-with-flask)
